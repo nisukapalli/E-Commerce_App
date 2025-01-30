@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css?v=<?php echo rand(); ?>">
+    <title> Login </title>
+    <script src="logim.js?v=<?php echo rand(); ?>" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1 id="header"> Welcome! Ready to check out my webpage? </h1>
+    </header>
+
+    <main>
+        <section id="section">
+            <h2> Enter a username. </h2>
+            <p> So that you can make your own posts and purchases, select a username and password. </p>
+
+            <form>
+                <fieldset>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="button" id="login">Login</button>
+                </fieldset>
+            </form>
+            <p></p>   <!-- to match extra <p> tag in login.php -->
+        </section>
+    </main>
+
+    <footer>
+      <hr>
+      &copy; Nikhil Isukapalli, 2024
+    </footer>
+  </body>
+</html>
